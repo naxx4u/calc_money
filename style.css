@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Moserat', sans-serif;
+  font-family: "Moserat", sans-serif;
 }
 h1 {
   text-align: left;
@@ -21,7 +21,6 @@ body {
   background-color: rgb(235, 235, 235);
   height: auto;
 }
-
 
 .main-wrapper {
   width: 1000px;
@@ -108,48 +107,48 @@ body {
 
 @media (min-width: 1024px) {
   .main-wrapper {
-      margin: 0 auto;
+    margin: 0 auto;
   }
 }
 
 @media (max-width: 468px) {
-  div {max-width: 350px;}
-body {
-  margin: 0;
-  padding: 0;
-  height: 768px;
-}
-h1 {
-  font-size: large;
-  text-align: center;
-}
-.main-wrapper {
-  width: 350px;
-  margin: 0 0 0 0;
-  padding: 0;
-  text-align: center;
-}
-.inputs-block {
-  flex-wrap: wrap;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  margin-top: 20px;
-  max-width: 350px;
-  
-}
-.inputs-block-column h6 {
-  padding: 15px 0;
-
-}
-.input{
-    width: 150px;
-}
-.result-block input {
-  padding-left: 10px;
-  width: 100px;
-}
-.result-block{
+  div {
+    max-width: 350px;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    height: 768px;
+  }
+  h1 {
+    font-size: large;
+    text-align: center;
+  }
+  .main-wrapper {
+    width: 350px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+  }
+  .inputs-block {
+    flex-wrap: wrap;
+    text-align: center;
     align-items: center;
-}
+    justify-content: space-between;
+    margin-top: 20px;
+    max-width: 350px;
+  }
+  .inputs-block-column h6 {
+    padding: 15px 0;
+  }
+  .input {
+    width: 150px;
+  }
+  .result-block input {
+    padding-left: 10px;
+    width: 100px;
+  }
+  .result-block {
+    align-items: center;
+  }
 }
