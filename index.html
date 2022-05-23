@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="calculator.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Калькулятор доходів</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <h1>Калькулятор доходів</h1>
+      <div class="inputs-block">
+        <div class="inputs-block-column">
+          <h6>Дохід в місяць</h6>
+          <input type="number" id="income-mainMoney"  class="input" placeholder="Зарплата" />
+          <input type="number" id="income-freelance"  class="input" placeholder="Фріланс" />
+          <input type="number" id="income-anotherMoneyOne"  class="input" placeholder="Доп. дохід" />
+          <input type="number" id="income-anotherMoneyTwo" class="input" placeholder="Доп. дохід" />
+        </div>
+        <div class="inputs-block-column">
+          <h6>Обов'язкові витрати</h6>
+          <input type="number" id="outcome-flat" class="input" placeholder="Квартира" />
+          <input type="number" id="outcome-communal" class="input" placeholder="Комуналка" />
+          <input type="number" id="outcome-products" class="input" placeholder="Продукти" />
+          <input type="number" id="outcome-own" class="input" placeholder="Особисті витрати" />
+        </div>
+        <div class="inputs-block-column">
+          <div class="total-numb">
+            <h6>Доступно в місяць (без скарбнички):</h6>
+            <input type="number" id="total-avalaibleMonth" class="input-static" value="0" readonly />
+          </div>
+          <div class="total-numb">
+            <h6>Доступно в день:</h6>
+            <input type="number" id="total-avalaibleDay" class="input-static" value="0" readonly/>
+          </div>
+          <div class="total-numb">
+              <h6>Назбираєм за рік:</h6>
+            <input type="number" id="total-atYear" class="input-static"value="0" readonly/>
+          </div>
+        </div>
+      </div>
+      <div class="ranger-block">
+          <h6>Скарбничка (скільки відкладаєм?)</h6>
+          <input value="0" type="range"  id="range" class="" min="0" max="100">
+          <div> <span id="total-percent"> 0</span>%</div>
+      </div>
+      <div class="result-block">
+          <h6>Відкладаєм:</h6>
+          <input value="0" type="number"  id="save" class="input-static" readonly>
+          <h6>Тратим:</h6>
+          <input value="0" type="number"  id="nosave" class="input-static" readonly>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
