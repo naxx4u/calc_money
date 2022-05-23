@@ -117,9 +117,10 @@ body {
     max-width: 320px;
   }
   body {
-    
+    display: block;
     max-width: auto;
     max-height: 810px;
+    
   }
   h1 {
     font-size: large;
@@ -131,6 +132,7 @@ body {
     margin: 0 auto ;
     padding: 30px 0 0 0;
     text-align: center;
+    overflow: hidden;
   }
   .inputs-block  {
     flex-wrap: wrap;
@@ -154,7 +156,7 @@ body {
   .result-block {
     align-items: center;
     justify-content: center;
-    padding-left: 1rem;
+    padding-left: 2rem;
     
   }
 }
